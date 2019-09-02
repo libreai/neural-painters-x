@@ -1,2 +1,2 @@
-# neural-painters
-Neural Paiters
+# Neural Painter X
+Neural Painter X
