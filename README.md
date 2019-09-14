@@ -3,7 +3,7 @@
 # The Joy of Neural Painting
 ## Learning Neural Painters Fast! using PyTorch and Fast.ai
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=NfZNDB5vkok" target="_blank"><img src="http://img.youtube.com/vi/NfZNDB5vkok/0.jpg"  alt="The Joy of Neural Painting" width="480" height="360" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=NfZNDB5vkok" target="_blank"><img src="http://img.youtube.com/vi/NfZNDB5vkok/0.jpg"  alt="The Joy of Neural Painting" width="480" height="200" border="10" /></a>
 
 I am sure you know [Bob Ross](https://en.wikipedia.org/wiki/Bob_Ross) and his program [The Joy of Painting](https://en.wikipedia.org/wiki/The_Joy_of_Painting) where he taught thousands of viewers how to paint beautiful landscapes with a simple and fun way, combining colors and brushstrokes, to achieve great results very quickly. Do you remember him teaching how to paint a pixel at the time? of course not! 
 
