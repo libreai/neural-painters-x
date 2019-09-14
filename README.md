@@ -95,7 +95,7 @@ Note that the optimization process is targeted to learn the tensor of actions, w
 
 ---
 
-##Acknowledgements
+## Acknowledgements
 
 We would like to thank Reiichiro Nakano for helping us clarifying doubts during the implementation of our Neural Painters and for his supportive and encouraging comments and feedback. Thanks a lot Reiichiro! [@reiinakano](https://twitter.com/reiinakano).
 
