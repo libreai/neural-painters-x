@@ -46,6 +46,7 @@ More precisely, since GANs main components are the Generator and Critic the idea
 
 4. **Transfer learning for adversarial training (GAN mode)**: continue the Generator and Critic training in a GAN setting. Faster! ([03_neural_painter_x_training_GAN_mode.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/03_neural_painter_x_training_GAN_mode.ipynb))
 
+**Let's Paint** [04_neural_painter_x_painting.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/04_neural_painter_x_painting.ipynb)
 
 ## More in detail:
 
@@ -100,8 +101,6 @@ The Neural Painters paper [1] introduces a process called Intrinsic Style Transf
 **Figure 6. Painting with Neural Painters using Intrinsic Style Transfer.**
 
 Note that the optimization process is targeted to learn the tensor of actions, while all the rest model weights, that is, the ones of the Neural Painter and CNN models. We use the same Feature Loss as before [3].
-
-**Let's Paint** [04_neural_painter_x_painting.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/04_neural_painter_x_painting.ipynb)
 
 ---
 
