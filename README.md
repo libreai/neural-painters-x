@@ -103,21 +103,21 @@ We would like to thank Reiichiro Nakano for helping us clarifying doubts during 
 
 ## References
 
-[1] Neural Painters: A Learned Differentiable Constraint for Generating Brushstroke Paintings. Reiichiro Nakano 
+[1] *Neural Painters: A Learned Differentiable Constraint for Generating Brushstroke Paintings*. Reiichiro Nakano 
 [arXiv preprint arXiv:1904.08410](https://arxiv.org/abs/1904.08410), 2019. [Github repo](https://github.com/reiinakano/neural-painters).
 
-[2] Decrappification, DeOldification, and Super Resolution. Jason Antic (Deoldify), Jeremy Howard (fast.ai), and Uri Manor (Salk Institute) https://www.fast.ai/2019/05/03/decrappify/ , 2019.
+[2] *Decrappification, DeOldification, and Super Resolution*. Jason Antic (Deoldify), Jeremy Howard (fast.ai), and Uri Manor (Salk Institute) https://www.fast.ai/2019/05/03/decrappify/ , 2019.
 
-[3] Fast.ai MOOC Lesson 7: Resnets from scratch; U-net; Generative (adversarial) networks. https://course.fast.ai/videos/?lesson=7 ; Notebook: https://nbviewer.jupyter.org/github/fastai/course-v3/blob/master/nbs/dl1/lesson7-superres.ipynb [Accessed on: 2019–08]
+[3] *Fast.ai MOOC Lesson 7: Resnets from scratch; U-net; Generative (adversarial) networks*. https://course.fast.ai/videos/?lesson=7 ; Notebook: https://nbviewer.jupyter.org/github/fastai/course-v3/blob/master/nbs/dl1/lesson7-superres.ipynb [Accessed on: 2019–08]
 
-[4] Perceptual Losses for Real-Time Style Transfer and Super-Resolution
+[4] *Perceptual Losses for Real-Time Style Transfer and Super-Resolution*.
 Justin Johnson, Alexandre Alahi, Li Fei-Fei https://arxiv.org/abs/1603.08155 , 2016
 
-[5] Teaching Agents to Paint Inside Their Own Dreams. Reiichiro Nakano. 
+[5] *Teaching Agents to Paint Inside Their Own Dreams*. Reiichiro Nakano. 
 https://reiinakano.com/2019/01/27/world-painters.html , 2019
 
-[6] A Neural Algorithm of Artistic Style. Leon A. Gatys, Alexander S. Ecker, Matthias Bethge. https://arxiv.org/abs/1508.06576, 2015
+[6] *A Neural Algorithm of Artistic Style*. Leon A. Gatys, Alexander S. Ecker, Matthias Bethge. https://arxiv.org/abs/1508.06576, 2015
 
-[7] Very Deep Convolutional Networks for Large-Scale Image Recognition. Karen Simonyan, Andrew Zisserman. https://arxiv.org/abs/1409.1556, 2014
+[7] *Very Deep Convolutional Networks for Large-Scale Image Recognition*. Karen Simonyan, Andrew Zisserman. https://arxiv.org/abs/1409.1556, 2014
 
 ---
