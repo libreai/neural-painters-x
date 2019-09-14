@@ -16,4 +16,4 @@ This folder contains our implementation for **Neural Painters** [1].
 ### References
 
 [1] Neural Painters: A Learned Differentiable Constraint for Generating Brushstroke Paintings. Reiichiro Nakano 
-arXiv preprint [arXiv:1904.08410]((https://arxiv.org/abs/1904.08410)), 2019. [Github repo](https://github.com/reiinakano/neural-painters).
+arXiv preprint [arXiv:1904.08410](https://arxiv.org/abs/1904.08410), 2019. [Github repo](https://github.com/reiinakano/neural-painters).
