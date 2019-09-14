@@ -46,7 +46,7 @@ More precisely, since GANs main components are the Generator and Critic the idea
 
 4. **Transfer learning for adversarial training (GAN mode)**: continue the Generator and Critic training in a GAN setting. Faster! ([03_neural_painter_x_training_GAN_mode.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/03_neural_painter_x_training_GAN_mode.ipynb))
 
-**Let's Paint** [04_neural_painter_x_painting.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/04_neural_painter_x_painting.ipynb)
+**Let's Paint:** [04_neural_painter_x_painting.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/04_neural_painter_x_painting.ipynb)
 
 ## More in detail:
 
