@@ -3,7 +3,9 @@
 # The Joy of Neural Painting
 ## Learning Neural Painters Fast! using PyTorch and Fast.ai
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=NfZNDB5vkok" target="_blank"><img src="http://img.youtube.com/vi/NfZNDB5vkok/0.jpg"  alt="The Joy of Neural Painting" width="480" height="360" border="10" /></a>
+<p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=NfZNDB5vkok" target="_blank"><img src="http://img.youtube.com/vi/NfZNDB5vkok/0.jpg"  alt="The Joy of Neural Painting" width="480" height="360" border="10"/></a>
+</p>
 
 I am sure you know [Bob Ross](https://en.wikipedia.org/wiki/Bob_Ross) and his program [The Joy of Painting](https://en.wikipedia.org/wiki/The_Joy_of_Painting) where he taught thousands of viewers how to paint beautiful landscapes with a simple and fun way, combining colors and brushstrokes, to achieve great results very quickly. Do you remember him teaching how to paint a pixel at the time? of course not! 
 
@@ -50,28 +52,28 @@ The training set consists of labeled examples where the input corresponds to an 
 The input action vectors go through the Generator consists of a fully-connected layer (to increase the input dimensions) and of a Deep Convolutional Neural Network connected to it.
 The output of the Generator is an image of a brushstroke. The loss computed between the images is the feature loss introduced in [3] (also known as perceptual loss [4]). The process is depicted in Figure 1.
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_generator_non_adversarial.jpg" width="50%"/></center>
+<p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_generator_non_adversarial.jpg" width="50%"/></p>
 
 **Figure 1. Pre-train the Generator using a (non-adversarial) feature loss.**
 
 ### (2) Freeze the pre-trained Generator 
 After pre-training the Generator using the non-adversarial loss, the brushstrokes look like the ones depicted in Figure 2. A set of brushstrokes images is generated that will help us pre-train the Critic in the next step.
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/sample_brushstrokes_non_adversarial.jpg" width="80%"/></center>
+<p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/sample_brushstrokes_non_adversarial.jpg" width="80%"/></center></p>
 
 **Figure 2 . Sample Brushstrokes from the Generator Pre-trained with a Non-Adversarial Loss.**
 
 ### (3) Pre-train the Critic as a Binary Classifier.
 We train the Critic as binary classifier (Figure 3), that is, the Critic is pre-trained on the task of recognizing true vs generated brushstrokes images (Step (2)). We use is the Binary Cross Entropy as binary loss for this step.
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_critic_non_adversarial.jpg" width="50%"/></center>
+<p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_critic_non_adversarial.jpg" width="50%"/></center></p>
 
 **Figure 3 . Pre-train the Critic as a Binary Classifier.**
 
 ### (4) Transfer Learning for Adversarial Training (GAN mode)
 Finally, we continue the Generator and Critic training in a GAN setting as shown in Figure 4. This final step is much faster that training the Generator and Critic from scratch as a GAN. 
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painters-x/master/images/neural_painter_generator_adversarial.jpg" width="80%"/></center>
+<p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painters-x/master/images/neural_painter_generator_adversarial.jpg" width="80%"/></p>
 
 **Figure 4 . Transfer Learning: Continue the Generator and Critic training in a GAN setting. Faster.**
 
@@ -79,7 +81,7 @@ One can observe from Figure 2 that the pre-trained Generator is doing a decent j
 
 Figure 5 shows the output of the Generator after completing a single epoch of GAN training, i.e., after transferring the knowledge acquired in the pre-training phase. We can observed how the brushstrokes are more refined and, although slightly different to the true brushstrokes, they have interesting textures, which makes them very appealing for brushstrokes paintings.
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painters-x/master/images/sample_brushstrokes_gan.jpg" width="80%"/></center>
+<p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painters-x/master/images/sample_brushstrokes_gan.jpg" width="80%"/></p>
 
 **Figure 5 . Sample Brushstrokes from the Generator after Adversarial Training (GAN mode).**
 
@@ -91,7 +93,7 @@ Given an input image for inspiration, e.g., a photo of a beautiful landscape, th
 The Neural Painters paper [1] introduces a process called Intrinsic Style Transfer, similar in spirit to Neural Style Transfer [6] but which does not require a style image. Intuitively, the features of the content input image and the one produced by the Neural Painter should be similar. The image features are extracted using a VGG16 [7] network as a feature extractor, denoted as CNN in Figure 6, which depicts the whole process. 
 
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painters-x/master/images/neural_painter_painting.png" width="80%"/></center>
+<p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painters-x/master/images/neural_painter_painting.png" width="80%"/></p>
 
 **Figure 6. Painting with Neural Painters using Intrinsic Style Transfer.**
 
