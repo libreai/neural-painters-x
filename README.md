@@ -28,19 +28,16 @@ We indeed tried first a pure adversarial training following the paper, but altho
 
 More precisely, since GANs main components are the Generator and Critic the idea is to pre-train them independently, that is in a non-adversarial manner, and do transfer learning by hooking them together after pre-training and proceed with the adversarial training, i.e., GAN mode. This process has shown to produce remarkable results [2] and is the one we follow here.
 
-```
 **The main steps are as described as follows:**
 
-(1) Pre-train the Generator with a non-adversarial loss, e.g., using a feature loss (also known as perceptual loss)
+1. **Pre-train the Generator with a non-adversarial loss**, e.g., using a feature loss (also known as perceptual loss)
 
-(2) Freeze the pre-trained Generator weights
+2. **Freeze the pre-trained Generator weights**
 
-(3) Pre-train the Critic as a Binary Classifier
-(i.e., non-adversarially) using the pre-trained Generator (in evaluation mode with frozen model weights) to generate `fake` brushstrokes. That is, the
-Critic should learn to discriminate between real images and the generated ones. This step uses a standard binary classification loss, i.e., Binary Cross Entropy, not a GAN loss
+3. **Pre-train the Critic as a Binary Classifier** (i.e., non-adversarially) using the pre-trained Generator (in evaluation mode with frozen model weights) to generate `fake` brushstrokes. That is, the Critic should learn to discriminate between real images and the generated ones. This step uses a standard binary classification loss, i.e., Binary Cross Entropy, not a GAN loss
 
-(4) Transfer learning for adversarial training (GAN mode): continue the Generator and Critic training in a GAN setting. Faster!
-```
+4. **Transfer learning for adversarial training (GAN mode)**: continue the Generator and Critic training in a GAN setting. Faster!
+
 
 ## More in detail:
 
@@ -50,6 +47,7 @@ The input action vectors go through the Generator consists of a fully-connected 
 The output of the Generator is an image of a brushstroke. The loss computed between the images is the feature loss introduced in [3] (also known as perceptual loss [4]). The process is depicted in Figure 1.
 
 <center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_generator_non_adversarial.jpg" width="50%"/></center>
+
 **Figure 1. Pre-train the Generator using a (non-adversarial) feature loss.**
 
 ### (2) Freeze the pre-trained Generator 
