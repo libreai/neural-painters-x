@@ -1,5 +1,7 @@
 **Blogpost with more details:** [The Joy of Neural Painting](https://medium.com/libreai/the-joy-of-neural-painting-e4319282d51f)
 
+**The implementation is break down in a set of [Notebooks](https://github.com/libreai/neural-painters-x/tree/master/notebooks) to ease exploration and understanding**
+
 # The Joy of Neural Painting
 ## Learning Neural Painters Fast! using PyTorch and Fast.ai
 
@@ -36,13 +38,13 @@ More precisely, since GANs main components are the Generator and Critic the idea
 
 **The main steps are as described as follows:**
 
-1. **Pre-train the Generator with a non-adversarial loss**, e.g., using a feature loss (also known as perceptual loss)
+1. **Pre-train the Generator with a non-adversarial loss**, e.g., using a feature loss (also known as perceptual loss). ([01_neural_painter_x_training_Generator_Non_Adversarial.ipynb](https://github.com/libreai/neural-painter-x/blob/master/notebooks/01_neural_painter_x_training_Generator_Non_Adversarial.ipynb))
 
 2. **Freeze the pre-trained Generator weights**
 
-3. **Pre-train the Critic as a Binary Classifier** (i.e., non-adversarially) using the pre-trained Generator (in evaluation mode with frozen model weights) to generate `fake` brushstrokes. That is, the Critic should learn to discriminate between real images and the generated ones. This step uses a standard binary classification loss, i.e., Binary Cross Entropy, not a GAN loss
+3. **Pre-train the Critic as a Binary Classifier** (i.e., non-adversarially) using the pre-trained Generator (in evaluation mode with frozen model weights) to generate `fake` brushstrokes. That is, the Critic should learn to discriminate between real images and the generated ones. This step uses a standard binary classification loss, i.e., Binary Cross Entropy, not a GAN loss. ([02_neural_painter_x_training_Critic_Non_Adversarial.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/02_neural_painter_x_training_Critic_Non_Adversarial.ipynb))
 
-4. **Transfer learning for adversarial training (GAN mode)**: continue the Generator and Critic training in a GAN setting. Faster!
+4. **Transfer learning for adversarial training (GAN mode)**: continue the Generator and Critic training in a GAN setting. Faster! ([03_neural_painter_x_training_GAN_mode.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/03_neural_painter_x_training_GAN_mode.ipynb))
 
 
 ## More in detail:
@@ -98,6 +100,8 @@ The Neural Painters paper [1] introduces a process called Intrinsic Style Transf
 **Figure 6. Painting with Neural Painters using Intrinsic Style Transfer.**
 
 Note that the optimization process is targeted to learn the tensor of actions, while all the rest model weights, that is, the ones of the Neural Painter and CNN models. We use the same Feature Loss as before [3].
+
+**Let's Paint** [04_neural_painter_x_painting.ipynb](https://github.com/libreai/neural-painters-x/blob/master/notebooks/04_neural_painter_x_painting.ipynb)
 
 ---
 
