@@ -53,14 +53,14 @@ The output of the Generator is an image of a brushstroke. The loss computed betw
 ### (2) Freeze the pre-trained Generator 
 After pre-training the Generator using the non-adversarial loss, the brushstrokes look like the ones depicted in Figure 2. A set of brushstrokes images is generated that will help us pre-train the Critic in the next step.
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/sample_brushstrokes_non_adversarial.jpg" width="45%"/></center>
+<center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/sample_brushstrokes_non_adversarial.jpg" width="80%"/></center>
 
 **Figure 2 . Sample Brushstrokes from the Generator Pre-trained with a Non-Adversarial Loss.**
 
 ### (3) Pre-train the Critic as a Binary Classifier.
 We train the Critic as binary classifier (Figure 3), that is, the Critic is pre-trained on the task of recognizing true vs generated brushstrokes images (Step (2)). We use is the Binary Cross Entropy as binary loss for this step.
 
-<center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_critic_non_adversarial.jpg" width="80%"/></center>
+<center><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_critic_non_adversarial.jpg" width="50%"/></center>
 
 **Figure 3 . Pre-train the Critic as a Binary Classifier.**
 
