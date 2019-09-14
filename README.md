@@ -1,9 +1,9 @@
+# The Joy of Neural Painting
+## Learning Neural Painters Fast! using PyTorch and Fast.ai
+
 * **Blogpost with more details:** [The Joy of Neural Painting](https://medium.com/libreai/the-joy-of-neural-painting-e4319282d51f)
 
 * **The implementation is break down in a set of [Notebooks](https://github.com/libreai/neural-painters-x/tree/master/notebooks) to ease exploration and understanding**
-
-# The Joy of Neural Painting
-## Learning Neural Painters Fast! using PyTorch and Fast.ai
 
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=NfZNDB5vkok" target="_blank"><img src="http://img.youtube.com/vi/NfZNDB5vkok/0.jpg"  alt="The Joy of Neural Painting" width="480" height="360" border="10"/></a>
