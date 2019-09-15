@@ -104,7 +104,7 @@ Note that the optimization process is targeted to learn the tensor of actions, w
 
 ### Notes
 
-For blending the brushstrokes, we follow a linear blending strategy to combine the generated strokes in a canvas, this process is described in detail in a very nice post titled Teaching Agents to Paint Inside Their Own Dreams also by Reiichiro Nakano [5]. We are currently exploring an alternative process that uses the alpha channel for blending.
+* For blending the brushstrokes, we follow a linear blending strategy to combine the generated strokes in a canvas, this process is described in detail in a very nice post titled Teaching Agents to Paint Inside Their Own Dreams also by Reiichiro Nakano [5]. We are currently exploring an alternative process that uses the alpha channel for blending.
 
 ## Acknowledgements
 
