@@ -84,7 +84,7 @@ Finally, we continue the Generator and Critic training in a GAN setting as shown
 
 One can observe from Figure 2 that the pre-trained Generator is doing a decent job learning brushstrokes. However, there are still certain imperfections when compared to the true strokes in the dataset. 
 
-Figure 5 shows the output of the Generator after completing a single epoch of GAN training, i.e., after transferring the knowledge acquired in the pre-training phase. We can observed how the brushstrokes are more refined and, although slightly different to the true brushstrokes, they have interesting textures, which makes them very appealing for brushstrokes paintings.
+Figure 5 shows the output of the Generator after completing a single epoch of GAN training, i.e., after transferring the knowledge acquired in the pre-training phase. We can observe how the brushstrokes are more refined and, although slightly different to the true brushstrokes, they have interesting textures, which makes them very appealing for brushstrokes paintings.
 
 <p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painters-x/master/images/sample_brushstrokes_gan.jpg" width="80%"/></p>
 
