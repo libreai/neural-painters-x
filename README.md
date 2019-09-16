@@ -5,6 +5,8 @@
 
 * **The implementation is broken down in a set of [Notebooks](https://github.com/libreai/neural-painters-x/tree/master/notebooks) to ease exploration and understanding**
 
+* This Neural Painters implementation is the core technique used by the collective [`diavlex`](http://diavlex.com) for their **Art+AI collection [Residual](https://cuevagallery.com/collections/residual-collection-by-diavlex) at [Cueva Gallery](https://cuevagallery.com)**.
+
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=NfZNDB5vkok" target="_blank"><img src="http://img.youtube.com/vi/NfZNDB5vkok/0.jpg"  alt="The Joy of Neural Painting" width="480" height="360" border="10"/></a>
 </p>
@@ -15,7 +17,7 @@ However, most of the current generative AI Art methods are still centered to tea
 
 At [Libre AI](https://libreai.com), we have started a Creative AI initiative with the goal to make more accessible the advances of AI to groups of artists who do not necessarily have a tech background. We want to explore how the creative process is enriched by the interaction between creative people and creative machines.
 
-As first step, we need to teach a machine how to paint. It should learn to paint as a human would do it: using brushstrokes and combining colors on a canvas. We research the state-of-the-art and despite the great research works, there were not really a single paper that satisfied our requirements, until we found *Neural Painters: A Learned Differentiable Constraint for Generating Brushstroke Paintings* by Reiichiro Nakano [1]. This finding was quite refreshing.
+As first step, we need to teach a machine how to paint. It should learn to paint as a human would do it: using brushstrokes and combining colors on a canvas. We researched the state-of-the-art and despite the great works, there was not really a single paper that satisfied our requirements, until we found *Neural Painters: A Learned Differentiable Constraint for Generating Brushstroke Paintings* by Reiichiro Nakano [1]. This finding was quite refreshing.
 
 ## Tinkering with Neural Painters
 Neural Painters [1] are a class of models that can be seen as a fully differentiable simulation of a particular non-differentiable painting program, in other words, the machine "paints" by successively generating brushstrokes (i.e., actions that defines a brushstrokes) and applying them on a canvas, as an artist would do.
@@ -32,7 +34,7 @@ We indeed tried first a pure adversarial training following the paper, but altho
 
 > To overcome these known GANs limitations and to speed up the Neural Painter training process, we leveraged the power of Transfer Learning
 
-**Transfer learning** is a very useful technique in Machine Learning, e.g., the ImageNet models trained as classifiers, are largely used as powerful image feature extractors, in NLP, word embeddings, learned unsupervised or with minimal supervision (e.g., trying to predict words in the same context), have been very useful as representations of words in more complex language models. In Recommender Systems, representations of items (e.g., book, movie, song) or users can be learned via Collaborative Filtering and then used them to not only for personalized ranking, but also for adaptive user interfaces. The fundamental idea, is to learn a model or feature representation on a task, and then transfer that knowledge to another related task, without the need to start from scratch, and only do some fine-tuning to adapt the model or representation parameters on that task.
+**Transfer learning** is a very useful technique in Machine Learning, e.g., the ImageNet models trained as classifiers, are largely used as powerful image feature extractors, in NLP, word embeddings, learned unsupervised or with minimal supervision (e.g., trying to predict words in the same context), have been very useful as representations of words in more complex language models. In Recommender Systems, representations of items (e.g., book, movie, song) or users can be learned via Collaborative Filtering and then use them not only for personalized ranking, but also for adaptive user interfaces. The fundamental idea, is to learn a model or feature representation on a task, and then transfer that knowledge to another related task, without the need to start from scratch, and only do some fine-tuning to adapt the model or representation parameters on that task.
 
 More precisely, since GANs main components are the Generator and Critic the idea is to pre-train them independently, that is in a non-adversarial manner, and do transfer learning by hooking them together after pre-training and proceed with the adversarial training, i.e., GAN mode. This process has shown to produce remarkable results [2] and is the one we follow here.
 
