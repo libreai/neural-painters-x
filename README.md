@@ -54,7 +54,7 @@ More precisely, since GANs main components are the Generator and Critic the idea
 
 ### (1) Pre-train the Generator with a Non-Adversarial Loss
 The training set consists of labeled examples where the input corresponds to an action vector and the corresponding brushstroke image to the target. 
-The input action vectors go through the Generator consists of a fully-connected layer (to increase the input dimensions) and of a Deep Convolutional Neural Network connected to it.
+The input action vectors go through the Generator, which consists of a fully-connected layer (to increase the input dimensions) and of a Deep Convolutional Neural Network connected to it.
 The output of the Generator is an image of a brushstroke. The loss computed between the images is the feature loss introduced in [3] (also known as perceptual loss [4]). The process is depicted in Figure 1.
 
 <p align="center"><img src="https://raw.githubusercontent.com/libreai/neural-painter-x/master/images/neural_painter_generator_non_adversarial.jpg" width="50%"/></p>
