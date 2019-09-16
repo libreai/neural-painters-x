@@ -102,7 +102,7 @@ The Neural Painters paper [1] introduces a process called Intrinsic Style Transf
 
 **Figure 6. Painting with Neural Painters using Intrinsic Style Transfer.**
 
-Note that the optimization process is targeted to learn the tensor of actions, while all the rest model weights, that is, the ones of the Neural Painter and CNN models. We use the same Feature Loss as before [3].
+Note that the optimization process is targeted to learn the tensor of actions, while the remaining model weights are not changed, that is, the ones of the Neural Painter and CNN models. We use the same Feature Loss as before [3].
 
 ### Notes
 
