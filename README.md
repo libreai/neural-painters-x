@@ -30,7 +30,7 @@ We played around with the notebooks provided, they were extremely useful to unde
 
 ## Learning Neural Painters Faster
 GANs are great generative models but they are known to be notoriously difficult to train, specially due to requiring a large amount of data, and therefore, needing large computational power on GPUs. They require a lot of time to train and are sensitive to small hyperparameter variations. 
-We indeed tried first a pure adversarial training following the paper, but although we obtained some decent results with out implementation, in terms of brushstrokes quality, it took a day or two to get there with a single GPU using a Colaboratory notebook and [the full dataset](https://www.kaggle.com/reiinakano/mypaint_brushstrokes). 
+We indeed tried first a pure adversarial training following the paper, but although we obtained some decent results with our implementation, in terms of brushstrokes quality, it took a day or two to get there with a single GPU using a Colaboratory notebook and [the full dataset](https://www.kaggle.com/reiinakano/mypaint_brushstrokes). 
 
 > To overcome these known GANs limitations and to speed up the Neural Painter training process, we leveraged the power of Transfer Learning
 
