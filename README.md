@@ -122,10 +122,10 @@ We would like to thank Reiichiro Nakano for helping us clarifying doubts during 
 [3] *Fast.ai MOOC Lesson 7: Resnets from scratch; U-net; Generative (adversarial) networks*. https://course.fast.ai/videos/?lesson=7 ; Notebook: https://nbviewer.jupyter.org/github/fastai/course-v3/blob/master/nbs/dl1/lesson7-superres.ipynb [Accessed on: 2019–08]
 
 [4] *Perceptual Losses for Real-Time Style Transfer and Super-Resolution*.
-Justin Johnson, Alexandre Alahi, Li Fei-Fei https://arxiv.org/abs/1603.08155 , 2016
+Justin Johnson, Alexandre Alahi, Li Fei-Fei https://arxiv.org/abs/1603.08155, 2016
 
 [5] *Teaching Agents to Paint Inside Their Own Dreams*. Reiichiro Nakano. 
-https://reiinakano.com/2019/01/27/world-painters.html , 2019
+https://reiinakano.com/2019/01/27/world-painters.html, 2019
 
 [6] *A Neural Algorithm of Artistic Style*. Leon A. Gatys, Alexander S. Ecker, Matthias Bethge. https://arxiv.org/abs/1508.06576, 2015
 
